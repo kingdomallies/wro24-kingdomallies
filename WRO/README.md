@@ -11,8 +11,8 @@ WRO Future Engineers Team Kingdom Allies Engineering Documentation
 * `video` contains the video.md file with the link to a video where the driving demonstration exists
 
 ## Rubric Requirements
-* `Mobility Management` is found in `build`, `electrical`, and `models`
-* `Power and Sense Management` is found in `electrical`
+* `Mobility Management` is found in `build`, `schemes`, and `models`
+* `Power and Sense Management` is found in `schemes`
 * `Obstacle Management` is found in `strategy` and `src`
 * `Pictures - Team and Vehicle` is found in `photos`
 * `Performance Videos` is found in `video`
@@ -32,5 +32,7 @@ Our chassis is controlled by the Arduino Nano microcontroller, which gets inform
 - Pixycam 2.1
 - L3G4200D 3-Axis Gyro
 
-We utilize the Pixycam 2.1 to detect obstacle locations and navigate around them efficiently. Additionally, we employ the L3G4200D gyroscope to determine the robot’s orientation. For more detailed information about our robot's electrical components, please refer to the README file located in the electrical folder."# wro24-kingdomallies" 
+We utilize the Pixycam 2.1 to detect obstacle locations and navigate around them efficiently. Additionally, we employ the L3G4200D gyroscope to determine the robot’s orientation. For more detailed information about our robot's electrical components, please refer to the README file located in the schemes folder."
+
+# wro24-kingdomallies" 
 "# wro24-kingdomallies" 
