@@ -11,7 +11,8 @@ EV3 Brick
 - Port 1: Pixy Camera
 - Port 2: Right LEGO Ultrasonic Sensor
 - Port 3: Left LEGO Ultrasonic Sensor
-- Port 4: Gyro Sensor Pixy *Camera Output Ports (A-D)*
+- Port 4: Gyro Sensor Pixy
+*Camera Output Ports (A-D)*
 - Port A: Rear Wheel Motor
 - Port B: Steering Wheel Motor
 
