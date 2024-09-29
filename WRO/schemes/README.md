@@ -1,4 +1,4 @@
-Electromechanical diagrams
+# Electromechanical diagrams
 ====
 
 This diagram illustrates the wiring and components configuration of our robot
