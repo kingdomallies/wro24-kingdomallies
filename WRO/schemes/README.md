@@ -30,7 +30,7 @@ Our bot consists of the following components:
 - Russian Wheels
 - Steering Wheels
   
-LEGO Mindstorm EV3 Brick:
+#### LEGO Mindstorm EV3 Brick:
 The EV3 Brick is the central control unit of our robot. It features a programmable interface with a display screen and buttons for manual control. It is programmed using LEGO's Mindstorm software. It has 4 ports for Input and output, currently, our bot uses 2 output ports for both medium motors and 3 input ports for 2 ultrasonic sensors and gyro sensors.
 LEGO Rechargeable DC Battery:
 This 2000 mAh battery provides power to the EV3 Brick and other components. It is rechargeable and designed to fit into the EV3 Brick.
