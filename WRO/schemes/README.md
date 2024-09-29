@@ -5,15 +5,21 @@
 
 ====
 
-Central Unit:
+#### *Central Unit:*
 EV3 Brick
-Input Ports (1-4)
+*Input Ports (1-4)*
 - Port 1: Pixy Camera
-- Port 2: Right LEGO Ultrasonic Sensor - Port 3: Left LEGO Ultrasonic Sensor - Port 4: Gyro Sensor Pixy Camera Output Ports (A-D)
+- Port 2: Right LEGO Ultrasonic Sensor
+- Port 3: Left LEGO Ultrasonic Sensor
+- Port 4: Gyro Sensor Pixy *Camera Output Ports (A-D)*
 - Port A: Rear Wheel Motor
 - Port B: Steering Wheel Motor
-Components:
-Our bot consists of the following components: - LEGO Mindstorm EV3 Brick
+
+
+#### *Components:*
+Our bot consists of the following components: 
+
+- LEGO Mindstorm EV3 Brick
 - LEGO Rechargeable DC Battery
 - EV3 Medium Servo Motor
 - LEGO Ultrasonic Sensors
