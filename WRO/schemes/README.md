@@ -1,8 +1,9 @@
 # Electromechanical diagrams
 
-====
 ## Content
-Robot Schematic This diagram illustrates the wiring and components configuration of our robot
+* `Robot Schematic` This PDF illustrates the wiring and components configuration of our robot
+
+====
 
 Central Unit:
 EV3 Brick
