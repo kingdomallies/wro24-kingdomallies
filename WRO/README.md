@@ -9,7 +9,7 @@ WRO Future Engineers Team Kingdom Allies Engineering Documentation
 * `src` contains the code of control software for all components that were programmed to participate in the competition
 * `strategy` contains documentation and diagrams explaining our approach to the problem
 * `video` contains the video.md file with the link to a video where the driving demonstration exists
-===
+
 ## Rubric Requirements
 * `Mobility Management` is found in `build`, `schemes`, and `models`
 * `Power and Sense Management` is found in `schemes`
@@ -17,7 +17,7 @@ WRO Future Engineers Team Kingdom Allies Engineering Documentation
 * `Pictures - Team and Vehicle` is found in `photos`
 * `Performance Videos` is found in `video`
 * `Engineering Factor` is found in `build` and `README`
-===
+
 
 ## Who We Are
 Kingdom Allies is a driven group of high school students with the ambition to become future leaders in the field of autonomous vehicles. By actively participating in the WRO Future Engineers challenge, we are seizing the opportunity to develop our skills in engineering and problem-solving, preparing ourselves for the innovations of tomorrow.
@@ -25,7 +25,7 @@ Kingdom Allies is a driven group of high school students with the ambition to be
 - Gain hands-on experience with software organization tools, such as GitHub.
 - Develop proficiency in working with electronic components.
 - Learn to collaborate effectively as a team, solving problems with innovation and creativity.
-===
+
 
 ## Electrical Components
 Our chassis is controlled by the Arduino Nano microcontroller, which gets information from various sensors and uses said information to control the motors using an L298N motor controller board. The sensors that we are using for our vehicle are the following:
@@ -38,7 +38,7 @@ Our chassis is controlled by the Arduino Nano microcontroller, which gets inform
 - Lego Cables
 - Russian Wheels
 - Steering Wheels
-===
+
 ## Strategy for Autonomous RC Car  
 
 WRO Future Engineers Open Challenge
