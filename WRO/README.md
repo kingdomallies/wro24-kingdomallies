@@ -26,7 +26,6 @@ Kingdom Allies is a driven group of high school students with the ambition to be
 - Develop proficiency in working with electronic components.
 - Learn to collaborate effectively as a team, solving problems with innovation and creativity.
 
-
 ## Electrical Components
 Our chassis is controlled by the Arduino Nano microcontroller, which gets information from various sensors and uses said information to control the motors using an L298N motor controller board. The sensors that we are using for our vehicle are the following:
 - LEGO Mindstorm EV3 Brick
@@ -38,6 +37,9 @@ Our chassis is controlled by the Arduino Nano microcontroller, which gets inform
 - Lego Cables
 - Russian Wheels
 - Steering Wheels
+
+Our autonomous vehicle is constructed using LEGO Mindstorms EV3 components, featuring the EV3 Brick as the main control unit. The EV3 system includes several sensors, such as the ultrasonic and gyro sensors, which are essential for navigation and obstacle detection. Motors are controlled through the EV3 Medium Servo Motor, with power supplied by the LEGO Rechargeable DC Battery. The entire system operates under a software architecture developed using the EV3 platform to interact with the physical components and execute the programmed navigation strategy
+
 
 ## Strategy for Autonomous RC Car  
 
