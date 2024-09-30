@@ -1,4 +1,4 @@
-Control software
+## Control software
 ====
-
-This directory contains the code for the control software which is used by the vehicle to participate in the competition and which was developed by Kingdom Allies Team.
+## Content
+* `parking` contains the code for the control software which is used by the vehicle to participate in the competition and which was developed by Kingdom Allies Team.
