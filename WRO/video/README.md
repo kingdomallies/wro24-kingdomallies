@@ -1,6 +1,6 @@
 ## Video
 
-This directory consists of the video which shows our robot working on the mat.
+This directory consists of 3 videod showing our robot working on the mat, simple introduction about us and the robot.
 
 ## Content
 * `Obstacles round 2 video.` contains the video for obstacles round 2.
