@@ -9,7 +9,7 @@ WRO Future Engineers Team Kingdom Allies Engineering Documentation
 * `src` contains the code of control software for all components that were programmed to participate in the competition
 * `strategy` contains documentation and diagrams explaining our approach to the problem
 * `video` contains the video.md file with the link to a video where the driving demonstration exists
-
+===
 ## Rubric Requirements
 * `Mobility Management` is found in `build`, `schemes`, and `models`
 * `Power and Sense Management` is found in `schemes`
@@ -17,17 +17,17 @@ WRO Future Engineers Team Kingdom Allies Engineering Documentation
 * `Pictures - Team and Vehicle` is found in `photos`
 * `Performance Videos` is found in `video`
 * `Engineering Factor` is found in `build` and `README`
+===
 
-
-### Who We Are
+## Who We Are
 Kingdom Allies is a driven group of high school students with the ambition to become future leaders in the field of autonomous vehicles. By actively participating in the WRO Future Engineers challenge, we are seizing the opportunity to develop our skills in engineering and problem-solving, preparing ourselves for the innovations of tomorrow.
 - Deepen our understanding of autonomous vehicle technology.
 - Gain hands-on experience with software organization tools, such as GitHub.
 - Develop proficiency in working with electronic components.
 - Learn to collaborate effectively as a team, solving problems with innovation and creativity.
+===
 
-
-### Electrical Components
+## Electrical Components
 Our chassis is controlled by the Arduino Nano microcontroller, which gets information from various sensors and uses said information to control the motors using an L298N motor controller board. The sensors that we are using for our vehicle are the following:
 - LEGO Mindstorm EV3 Brick
 - LEGO Rechargeable DC Battery
@@ -38,31 +38,36 @@ Our chassis is controlled by the Arduino Nano microcontroller, which gets inform
 - Lego Cables
 - Russian Wheels
 - Steering Wheels
+===
+## Strategy for Autonomous RC Car  
 
-##### LEGO Mindstorm EV3 Brick:
-The EV3 Brick is the central control unit of our robot. It features a programmable interface with a display screen and buttons for manual control. It is programmed using LEGO's Mindstorm software. It has 4 ports for Input and output, currently, our bot uses 2 output ports for both medium motors and 3 input ports for 2 ultrasonic sensors and gyro sensors.
-##### LEGO Rechargeable DC Battery:
-This 2000 mAh battery provides power to the EV3 Brick and other components. It is rechargeable and designed to fit into the EV3 Brick.
-##### EV3 Medium Servo Motor
-The medium servo motor is used for precise movements and rotations. It is smaller in size compared to the large motor and is capable of rotating 360 degrees with precise angle control, useful for the steering mechanism.
-##### LEGO Ultrasonic Sensors:
-These sensors are placed on both sides of the robot and measure the distance between the wall and the robot by emitting ultrasonic waves and measuring the time it takes for the waves to return. It's useful for obstacle detection and open-round challenge.
-##### LEGO Gyro Sensor:
-The gyro sensor mounted on top measures the rate of rotation around the sensor’s axis. It helps in precise robot movement, detecting orientation changes, and stabilizing movements, which is crucial for our robot’s journey.
-##### Pixy 2.1 Camera:
-The PIXY 2.1 Camera is an advanced vision sensor that can detect and track objects based on color. It provides real-time image processing capabilities and is used for object detection in obstacle challenge.
-#####LEGO Cables:
-These cables help in building connections between motors, and sensors to the EV3 Brick. They are responsible for transmitting power and data between the components and EV3 Brick.
-##### LEGO Russian Wheels (62.4 x 20)
-These wheels are used as rear wheels in our robot. These wheels are 62.4 mm in diameter and 20 mm in width.
-LEGO Tractor Wheels (56 x 26):
-These wheels are used as front wheels in our robot. These wheels are 56 mm in diameter and 26 mm in width.
-##### Rack & Gear:
-We designed a **custom 7.2 cm rack** with a similar **groove pattern** and design as the standard **6.4 cm LEGO rack**. The original 6.4 cm LEGO rack had some problems wherein its shorter length made it **difficult to mesh smoothly** with the **20-tooth double bevel black LEGO gear**, which restricted the wheels from achieving **specific steering angles**.
-However, even with our 7.2 cm rack, we encountered a minor issue: the grooves of the black LEGO gear and our custom rack weren’t perfectly meshing. While it functioned temporarily, the meshing wasn't ideal, and the **error compounded by 0.01 with each turn**. To overcome this, we also created a **custom 12 tooth gear** whose grooves are perfectly meshing with custom rack thus **eliminating meshing errors** and significantly **improved the accuracy of the steering**, allowing the wheels to turn at precise angles.
+WRO Future Engineers Open Challenge
+Project Overview
 
+This project aims to develop an autonomous RC car for the WRO Future Engineers Open Challenge. The car will navigate a course with turns, using ultrasonic sensors for wall detection and a gyro sensor for angle measurement. The goal is to complete three laps around the course, with precise 90-degree turns at each corner, controlled by a PID system.
+Components
+Ultrasonic Sensors: Two ultrasonic sensors will be mounted on the left and right sides of the car to detect walls and determine when to take a turn.
+Gyro Sensor: A gyro sensor will measure the car’s angular orientation, helping determine the angle of each turn (90 degrees) and ensuring the car moves straight using PID control.
+PID Controller: The PID (Proportional, Integral, Derivative) control will be used to maintain a straight trajectory after each turn.
+Strategy for Course Navigation
 
-
-
-# wro24-kingdomallies" 
-"# wro24-kingdomallies" 
+## 1. Initial Movement and Setup
+Forward Movement with Gyro PID: At the start, the car will move forward using the gyro sensor and a PID controller to ensure it moves in a straight line.
+ultrasonic Value Monitoring: The car will monitor the average of the ultrasonic sensor values during this forward movement. The car will continue moving forward until the average ultrasonic value exceeds 80 degrees.
+## 2. Detecting Turns Using Ultrasonic Sensors
+Turn Detection Logic: The ultrasonic sensors will be used to detect the absence of a wall, indicating it's time to make a turn.
+If one of the sensors detects no wall (high value), it means the car is approaching a corner.
+By subtracting the values of the left and right ultrasonic sensors, the car will determine which direction to turn:
+If the result is positive, it indicates that the right side detected the absence of a wall, meaning the car needs to turn right.
+If the result is negative, it means the left side detected no wall, and the car will turn left.
+## 3. Pre-determined Turn Direction
+Initial Direction Check: At the start of the run, the car will perform a quick check of the direction to turn (left or right) based on the initial readings from the ultrasonic sensors.
+This initial check will allow the car to store the general direction of turns for the rest of the laps.
+By storing this direction, the car won’t have to recheck which side to turn each time it reaches a corner, reducing the chance of incorrect turn values during the run.
+## 4. Executing Turns
+90-degree Turns with Gyro: When it’s time to turn, the car will use the gyro sensor to execute a precise 90-degree turn. The angle will be controlled through a feedback loop using the gyro sensor to ensure the turn is accurate.
+Straight Movement After Turn: After each turn, the car will again use the gyro sensor and PID control to ensure it moves in a straight line until it reaches the next corner.
+## 5. Looping Through Laps
+Loop for 3 Laps: The car will follow this strategy to complete 12 turns or 3 laps around the course, repeating the turn detection and execution process at each corner with updating the counter to know how many turns are completed and end when 12th turn is done. The pre-determined turn direction will guide the car without needing to recheck the sensors each time.
+Conclusion
+This strategy focuses on using sensor-based decision-making to navigate the course efficiently. The initial direction check simplifies the process by storing the turn direction, while the combination of ultrasonic sensors and the gyro sensor ensures that the car can handle both turns and straight movement with accuracy. By utilizing PID control, the car will maintain its straight trajectory and complete the course in the most efficient manner.
