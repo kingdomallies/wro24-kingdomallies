@@ -2,7 +2,6 @@
 
 This repository contains engineering materials of The Robot, a vehicle's model from Team Kingdom Allies, for the WRO Future Engineers competition for the 2024 season.
 
-====
 
 ## Content
 * `build` contains documentation about our chassis and material choice
