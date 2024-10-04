@@ -1,4 +1,7 @@
-WRO Future Engineers Team Kingdom Allies Engineering Documentation
+# WRO Future Engineers Team Kingdom Allies Engineering Documentation
+
+This repository contains engineering materials of The Robot, a vehicle's model from Team Kingdom Allies, for the WRO Future Engineers competition for the 2024 season.
+
 ====
 
 ## Content
@@ -37,6 +40,7 @@ Our chassis is controlled by the Arduino Nano microcontroller, which gets inform
 - Lego Cables
 - Russian Wheels
 - Steering Wheels
+
 
 Our autonomous vehicle is constructed using LEGO Mindstorms EV3 components, featuring the EV3 Brick as the main control unit. The EV3 system includes several sensors, such as the ultrasonic and gyro sensors, which are essential for navigation and obstacle detection. Motors are controlled through the EV3 Medium Servo Motor, with power supplied by the LEGO Rechargeable DC Battery. The entire system operates under a software architecture developed using the EV3 platform to interact with the physical components and execute the programmed navigation strategy
 
@@ -77,4 +81,3 @@ This strategy focuses on using sensor-based decision-making to navigate the cour
 
 
 
-WRO 2024 KINGDOM ALLIES
